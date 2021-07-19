@@ -128,7 +128,7 @@ function Generator() {
 
     function generateHTML() {
         const pageHTML = pageTemplate(employeeDataArr)
-        console.log(pageHTML)
+        writeFile(pageHTML);
     }
 
     userPrompt()

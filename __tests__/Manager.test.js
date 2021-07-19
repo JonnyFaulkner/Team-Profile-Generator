@@ -6,7 +6,7 @@ test('creates manager object', () => {
     expect(manager.name).toBe('John Doe');
     expect(manager.id).toBe('2');
     expect(manager.email).toBe('something@something.com');
-    expect(manager.officeNumber).toBe('12');
+    expect(manager.office).toBe('12');
 });
 
 test('gets managers role', () => {

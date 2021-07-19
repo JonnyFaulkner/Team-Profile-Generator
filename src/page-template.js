@@ -1,7 +1,8 @@
 const generateEmployees = employeeData => {
+    const employeeHtml = []
     for (i = 0; employeeData.length > i; i++) {
         if (employeeData[i].role === 'Manager') {
-            return `
+            employeeHtml.push(`
             <div>
                 <div>
                     <h2>${employeeData[i].name}</h2>
@@ -15,9 +16,10 @@ const generateEmployees = employeeData => {
                 </div>
             </div>
         `
+            )
         }
-        if (employeeData[i].role === 'Engineer') {
-            return `
+        else if (employeeData[i].role === 'Engineer') {
+            employeeHtml.push(`
             <div>
                 <div>
                     <h2>${employeeData[i].name}</h2>
@@ -27,13 +29,14 @@ const generateEmployees = employeeData => {
                     <ul style="list-style-type:none;">
                     <li>ID: ${employeeData[i].id}</li>
                     <li>Email:<a href="mailto;${employeeData[i].email}">${employeeData[i].email}</a></li>
-                    <li>GitHub:<a href="https://github.com/${employeeData[i].github}">${employeeData.github}</a></li>
+                    <li>GitHub:<a href="https://github.com/${employeeData[i].github}">${employeeData[i].github}</a></li>
                 </div>
             </div>
         `
+            )
         }
-        if (employeeData[i].role === 'Intern') {
-            return `
+        else if (employeeData[i].role === 'Intern') {
+            employeeHtml.push(`
             <div>
                 <div>
                     <h2>${employeeData[i].name}</h2>
@@ -47,9 +50,10 @@ const generateEmployees = employeeData => {
                 </div>
             </div>
         `
+            )
         }
-        console.log(employeeData[i].role)
     }
+    return employeeHtml
 }
 
 module.exports = employeeData => {
