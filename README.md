@@ -8,6 +8,7 @@ A command line app that generates an HTML file that shows members of a team base
 
 * Use command 'node index' to start application
 ![step-1](assets/images/step-1.png)
+<<<<<<< HEAD
 
 *Choose which kind of employee you would like to add
 ![step-2](assets/images/step-2.png)
@@ -32,3 +33,5 @@ A command line app that generates an HTML file that shows members of a team base
 
 ## Video
 [Video](https://drive.google.com/file/d/120C0ICeD8Cb2xUWsA0IGUJwVlOL7mxJP/view)
+=======
+>>>>>>> 6441ae34b3158fccafcfd72ba896342e49a77014
