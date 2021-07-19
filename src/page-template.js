@@ -11,7 +11,7 @@ const generateEmployees = employeeData => {
                 <div>
                     <ul style="list-style-type:none;">
                     <li>ID: ${employeeData[i].id}</li>
-                    <li>Email:<a href="mailto;${employeeData[i].email}">${employeeData[i].email}</a></li>
+                    <li>Email:<a href=mailto:"${employeeData[i].email}">${employeeData[i].email}</a></li>
                     <li>Office number: ${employeeData[i].office}</li>
                 </div>
             </div>
@@ -28,7 +28,7 @@ const generateEmployees = employeeData => {
                 <div>
                     <ul style="list-style-type:none;">
                     <li>ID: ${employeeData[i].id}</li>
-                    <li>Email:<a href="mailto;${employeeData[i].email}">${employeeData[i].email}</a></li>
+                    <li>Email:<a href=mailto:"${employeeData[i].email}">${employeeData[i].email}</a></li>
                     <li>GitHub:<a href="https://github.com/${employeeData[i].github}">${employeeData[i].github}</a></li>
                 </div>
             </div>
@@ -45,7 +45,7 @@ const generateEmployees = employeeData => {
                 <div>
                     <ul style="list-style-type:none;">
                     <li>ID: ${employeeData[i].id}</li>
-                    <li>Email:<a href="mailto;${employeeData[i].email}">${employeeData[i].email}</a></li>
+                    <li>Email:<a href=mailto:"${employeeData[i].email}">${employeeData[i].email}</a></li>
                     <li>School: ${employeeData[i].school}</li>
                 </div>
             </div>
